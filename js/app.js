@@ -68,79 +68,79 @@ console.log(productos);
     // SIMULADOR DE COMPRA
 
 
-//  let menu;
-//  do {
-//      let x, y;
+ let menu;
+ do {
+     let x, y;
     
-//      menu = Number(prompt(`Ingrese el producto que desea comprar
+     menu = Number(prompt(`Ingrese el producto que desea comprar
     
-//      1- CAMPERA GIMMY ($5600)
-//      2- CAMPERA YULIAM ($4400)
-//      3- BODY BASEMENT ($1680)
-//      4- CROP TOP GLIT ($1495)
-//      5- CAMISA JUSTIN ($2990)
-//      6- BODY MILOI ($1850)
+     1- CAMPERA GIMMY ($5600)
+     2- CAMPERA YULIAM ($4400)
+     3- BODY BASEMENT ($1680)
+     4- CROP TOP GLIT ($1495)
+     5- CAMISA JUSTIN ($2990)
+     6- BODY MILOI ($1850)
 
-//      0- Salir
+     0- Salir
     
-//      `));
-//      switch (menu) {
-//         case 1:
-//             y = String(prompt("Ingrese el talle"))
-//             x = Number(prompt("Ingrese la cantidad de unidades"));
-//             alert(`
-//             Usted compró Campera Gimmy.
+     `));
+     switch (menu) {
+        case 1:
+            y = String(prompt("Ingrese el talle"))
+            x = Number(prompt("Ingrese la cantidad de unidades"));
+            alert(`
+            Usted compró Campera Gimmy.
 
-//             Talle: (${y})
-//             Unidades: (${x})
-//             Precio final de $${5600 * x}`);
-//             break;
-//         case 2:
-//             y = String(prompt("Ingrese el talle"))
-//             x = Number(prompt("Ingrese la cantidad de unidades"));
-//             alert(`
-//             Usted compró Campera Yuliam.
+            Talle: (${y})
+            Unidades: (${x})
+            Precio final de $${5600 * x}`);
+            break;
+        case 2:
+            y = String(prompt("Ingrese el talle"))
+            x = Number(prompt("Ingrese la cantidad de unidades"));
+            alert(`
+            Usted compró Campera Yuliam.
 
-//             Talle: (${y})
-//             Unidades: (${x})
-//             Precio final de $${4400 * x}`);
-//             break;
-//         case 3:
-//             y = String(prompt("Ingrese el talle"))
-//             x = Number(prompt("Ingrese la cantidad de unidades"));
-//             alert(`
-//             Usted compró Body Basement.
+            Talle: (${y})
+            Unidades: (${x})
+            Precio final de $${4400 * x}`);
+            break;
+        case 3:
+            y = String(prompt("Ingrese el talle"))
+            x = Number(prompt("Ingrese la cantidad de unidades"));
+            alert(`
+            Usted compró Body Basement.
 
-//             Talle: (${y})
-//             Unidades: (${x})
-//             Precio final de $${1680 * x}`);
-//             break;
-//         case 4:
-//             y = String(prompt("Ingrese el talle"))
-//             x = Number(prompt("Ingrese la cantidad de unidades"));
-//             alert(`
-//             Usted compró Crop Top Glit.
+            Talle: (${y})
+            Unidades: (${x})
+            Precio final de $${1680 * x}`);
+            break;
+        case 4:
+            y = String(prompt("Ingrese el talle"))
+            x = Number(prompt("Ingrese la cantidad de unidades"));
+            alert(`
+            Usted compró Crop Top Glit.
 
-//             Talle: (${y})
-//             Unidades: (${x})
-//             Precio final de $${1495 * x}`);
-//             break;
-//         case 5:
-//             y = String(prompt("Ingrese el talle"))
-//             x = Number(prompt("Ingrese la cantidad de unidades"));
-//             alert(`
-//             Usted compró Camisa Justin.
+            Talle: (${y})
+            Unidades: (${x})
+            Precio final de $${1495 * x}`);
+            break;
+        case 5:
+            y = String(prompt("Ingrese el talle"))
+            x = Number(prompt("Ingrese la cantidad de unidades"));
+            alert(`
+            Usted compró Camisa Justin.
 
-//             Talle: (${y})
-//             Unidades: (${x})
-//             Precio final de $${2990 * x}`);
-//             break;
-//          case 6:
-//              alert("No hay stock del producto seleccionado.");
-//         default:
-//              alert("Elija un producto de la lista.");
-//             break;
-//     }
-// } while (menu != 0) {
-//     alert("Compra Cancelada");
-// } 
+            Talle: (${y})
+            Unidades: (${x})
+            Precio final de $${2990 * x}`);
+            break;
+         case 6:
+             alert("No hay stock del producto seleccionado.");
+        default:
+             alert("Elija un producto de la lista.");
+            break;
+    }
+} while (menu != 0) {
+    alert("Compra Cancelada");
+} 
