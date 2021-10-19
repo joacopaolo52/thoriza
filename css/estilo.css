@@ -5,6 +5,7 @@ html {
 a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 a:hover {
     color: white;
@@ -20,11 +21,15 @@ nav {
     position: fixed !important;
     top: 0;
     z-index: 999;
-    width: 100%;
+    width: 100vw;
 }
 .logo{
     width: 10rem;
     background-color: whitesmoke;
+}
+
+.logo:hover, .dropdown-item:hover {
+    background-color: red;
 }
 
 .navbar-nav {
@@ -34,10 +39,11 @@ nav {
     color: white !important;
     font-size: 2rem;
     margin: 2rem;
+    font-weight: bold;
 }
 
 .nav-link:hover {
-    color: rgb(146, 146, 146);
+    color: rgb(255, 0, 0) !important;
 }
 .dropdown-menu {
     background-color: black;
@@ -50,7 +56,48 @@ nav {
 }
 
 .dropdown-divider {
-    color: white;
+    color: red;
+}
+
+.form-control {
+    background-color: rgb(207, 207, 207);
+    width: 20rem;
+    height: 4rem;
+    margin-right: 10rem;
+    border: solid 1px red;
+    box-shadow: 2px 3px 4px red;
+    font-size: 1.5rem;
+    transition: all 1s;
+}
+
+.form-control::placeholder {
+    color: black;
+    font-weight: bold;
+}
+.form-control:hover, .form-control:focus {
+    background-color: red;
+    color: black;
+    border: solid 1px black;
+    box-shadow: 2px 3px 4px white;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.btn-outline-success {
+    width: 8rem;
+    color: black;
+    font-size: 1.7rem;
+    text-align: center;
+    border: solid 1px red;
+    background-color: white;
+    font-weight: bold;
+    box-shadow: 2px 3px 4px red;
+}
+.btn-outline-success:hover {
+    background-color: red;
+    color: black;
+    border: solid 1px black;
+    box-shadow: 2px 3px 4px white;
 }
 
     /* BANNER */
@@ -83,12 +130,13 @@ nav {
     padding: 0 5rem;
 }
 
-.banner__content h1 {
+h1 {
     font-size: 7rem;
     letter-spacing: 0.5rem;
     line-height: 3rem;
     text-transform: uppercase;
     flex-wrap: nowrap;
+    font-weight: bold;
 }
 
 .banner__content h2 {
@@ -102,6 +150,8 @@ nav {
     margin: 2rem;
     margin-top: 5rem;
     flex-wrap: nowrap;
+    font-weight: bold;
+    text-decoration-line: underline;
 }
 
 .banner__content a {
@@ -118,6 +168,7 @@ nav {
     font-size: 3rem;
     margin: 2rem;
     margin-left: 15rem;
+    font-weight: bold;
 }
 
 .banner__media-icons {
@@ -131,9 +182,20 @@ nav {
 .fab, .fas {
     font-size: 3rem;
     margin-bottom: 5rem;
-    color: rgb(255, 255, 255);
+    color: red;
 }
-
+@media (min-width:300px) and (max-width:570px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    .banner__content h2 {
+        font-size: 2rem;
+    }
+    .banner__content p {
+        font-size: 1.5rem;
+        margin-left: 10rem;
+    }
+}
     /* TIENDA */
 
 .tienda {
@@ -157,6 +219,9 @@ h3 {
 
 h4, h5 {
     text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-top: 1rem;
 }
 
 .tienda {
@@ -173,6 +238,29 @@ h4, h5 {
     border: solid 0.2rem black;
     border-radius: 2rem;
 }
+
+.button-tienda {
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    transition: all 800ms;
+}
+
+.button-tienda:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
 
 /* SOBRE NOSOTROS */
 
@@ -200,12 +288,22 @@ h4, h5 {
 .mapa {
     margin: 2rem;
     border-radius: 2rem;
-    box-shadow:  12px 11px 10px black;
+    box-shadow: 12px 11px 10px black;
+}
+
+@media (min-width:300px) and (max-width:1133px) {
+    .nosotros p {
+        width: 90%;
+    }
+    .mapa {
+        box-shadow: none;
+    }
 }
 
 /* FOOTER */
 footer {
-background-color: black;
+    background-color: black;
+    width: 100vw;
 }
 
 label {
