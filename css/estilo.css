@@ -1,18 +1,32 @@
+* {
+    font-family: 'PT Serif', serif;
+}
+    
+    /************ GENERAL **************/
+
+body {
+    background-color: black;
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    width: 100vw;
 }
+
 a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
+
 a:hover {
     color: white;
     opacity: 0.7;
 }
 
-    /* HEADER */
+    /************ HEADER **************/
+
 .bg-dark {
     background-color: black !important;
 }
@@ -92,6 +106,7 @@ nav {
     background-color: white;
     font-weight: bold;
     box-shadow: 2px 3px 4px red;
+    margin-right: 2rem;
 }
 .btn-outline-success:hover {
     background-color: red;
@@ -100,12 +115,12 @@ nav {
     box-shadow: 2px 3px 4px white;
 }
 
-    /* BANNER */
+    /************ BANNER **************/
 
 .banner {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height:100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -113,62 +128,29 @@ nav {
 }
 
 .banner__bg {
-    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: contain;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/fondo.png);
+    background-size: cover;
 }
 
 .banner__content {
     z-index: 888;
-    color: #000000;
     width: 100%;
-    margin-top: 5rem;
-    padding: 0 5rem;
 }
 
 h1 {
-    font-size: 7rem;
-    letter-spacing: 0.5rem;
-    line-height: 3rem;
-    text-transform: uppercase;
-    flex-wrap: nowrap;
-    font-weight: bold;
-}
-
-.banner__content h2 {
-    color: #ff0d2d;
     font-size: 4rem;
-    letter-spacing: 0.5rem;
-    line-height: 3rem;
-    font-weight: 500;
-    font-style: italic;
-    text-transform: uppercase;
-    margin: 2rem;
-    margin-top: 5rem;
-    flex-wrap: nowrap;
+    letter-spacing: 2rem;
     font-weight: bold;
-    text-decoration-line: underline;
-}
-
-.banner__content a {
-    background: #000000;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-size: 2rem;
-    font-weight: 600;
-    border-radius: 3px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.banner__content p {
-    font-size: 3rem;
-    margin: 2rem;
-    margin-left: 15rem;
-    font-weight: bold;
+    font-family: 'PT Serif', serif;
+    color: white;
+    margin-left: 2rem;
+    flex-wrap: wrap;
 }
 
 .banner__media-icons {
@@ -178,25 +160,26 @@ h1 {
     display: flex;
     flex-direction: column;
     transition: 0.5s ease;
+    color: white;
 }
 .fab, .fas {
     font-size: 3rem;
     margin-bottom: 5rem;
     color: red;
 }
-@media (min-width:300px) and (max-width:570px) {
+@media (min-width:568px) and (max-width:768px) {
     h1 {
-        font-size: 3.5rem;
-    }
-    .banner__content h2 {
-        font-size: 2rem;
-    }
-    .banner__content p {
-        font-size: 1.5rem;
-        margin-left: 10rem;
+        font-size: 3rem;
     }
 }
-    /* TIENDA */
+@media (min-width:300px) and (max-width:568px) {
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 0;
+    }
+}
+
+    /************ TIENDA **************/
 
 .tienda {
     display: flex;
@@ -262,48 +245,107 @@ h4, h5 {
 }
 
 
-/* SOBRE NOSOTROS */
+    /************ SOBRE NOSOTROS **************/
 
-.h3-nosotros {
-    display: grid;
-    margin-bottom: 0;
-    background-color: #d6d6d6;
-    padding-top: 5rem;
-}
-.nosotros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #d6d6d6;
-    padding-bottom: 5rem;
-    padding-top: 2rem;
-}
-.nosotros p {
-    font-size: 2.5rem;
-    text-align: justify;
-    width: 40%;
-    margin: 2rem;
-}
 .mapa {
     margin: 2rem;
     border-radius: 2rem;
     box-shadow: 12px 11px 10px black;
 }
 
-@media (min-width:300px) and (max-width:1133px) {
-    .nosotros p {
-        width: 90%;
+.mapa__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/fondo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right center;
+    padding: 50px 0;
+}
+
+.mapa__wrapper--contenedor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.mapa_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa__wrapper--contenedor3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 14rem;
+    color: #fff;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.h22 {
+    font-size: 4rem;
+    padding-bottom: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.divisor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    width: 0.2rem;
+    background-color: white;
+}
+
+.h2-sn {
+    color: white;
+    font-size: 5rem;
+    margin: 2rem;
+}
+
+.subcontenedor2__p {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width:300px) and (max-width:568px) {
+    .h2-sn {
+        font-size: 3rem;
+        margin: 1rem;
     }
-    .mapa {
-        box-shadow: none;
+    .w-50 {
+        width: 80% !important;
     }
 }
 
-/* FOOTER */
+@media (min-width:300px) and (max-width:900px) {
+    .mapa__wrapper--contenedor3 {
+        flex-wrap: wrap;
+    }
+    .divisor {
+        display: none;
+    }
+
+}
+
+    /************ FOOTER **************/
+
+.h3-footer {
+    color: white;
+    font-size: 4rem;
+}
+
 footer {
     background-color: black;
-    width: 100vw;
+    width: 100%;
 }
 
 label {

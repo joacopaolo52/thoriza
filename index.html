@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THORIZA</title>
+    <link rel="shortcut icon" href="assets/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
@@ -46,14 +50,8 @@
     <!-- BANNER -->
 
     <div class="banner">
-        <img class="banner__bg" src="assets/thoriza.gif"></img>           
-        <div class="banner__content">
-            <h1 class="animate__animated animate__backInLeft">Thoriza</h1>
-            <h2>Indumentaria femenina</h2>
-            <span></span>
-            <p>#MILOOKTHORIZA</p>
-            <a href="#">Leer más</a>
-        </div>
+        <div class="banner__bg"></div> 
+        <div class="banner__content"><h1>#MILOOKTHORIZA</h1></div>
         <div class="banner__media-icons">
             <a href="#">
               <i class="fab fa fa-whatsapp" aria-hidden="true"></i>
@@ -120,19 +118,49 @@
 
     <!-- SOBRE NOSOTROS -->
 
-    <div class="h3-nosotros" id="nosotros">
+    <!-- <div class="h3-nosotros" id="nosotros">
         <h3>Sobre Nosotros</h3>
         <hr>
     </div>
     <div class="nosotros">
         <p>Somos una tienda de indumentaria femenina ubicada en Lanús, Buenos Aires, Argentina. Estamos ubicados en Lanús Oeste a 3 cuadras de la estación. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos necessitatibus sunt veniam nulla iusto aspernatur sapiente nesciunt recusandae ea! Qui vero rerum ex nemo sequi. Maiores dignissimos dolores adipisci voluptatibus!</p>
         <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26232.97118525848!2d-58.404809401954154!3d-34.72733424735233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccdd2c61a84f7%3A0x2d7b90dd5022c123!2sThoriza!5e0!3m2!1ses!2sar!4v1634536611568!5m2!1ses!2sar" width="600" height="300" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+    </div> -->
+
+    <!-- SOBRE NOSOTROS 2 -->
+
+    <div class="mapa__wrapper" id="nosotros">
+        <div class="mapa__wrapper--contenedor1">
+            <h2 class="h2-sn">¿DÓNDE ESTAMOS?</h2>
+        </div>
+        <div class="mapa_container" data-sr-id="5">
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26232.97118525848!2d-58.404809401954154!3d-34.72733424735233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccdd2c61a84f7%3A0x2d7b90dd5022c123!2sThoriza!5e0!3m2!1ses!2sar!4v1634536611568!5m2!1ses!2sar" width="1000" height="400" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="mapa__wrapper--contenedor3">
+          <div class="subcontenedor1" data-sr-id="6" >
+              <h2 class="h22">Dirección y teléfono.</h2>
+              <p class="subcontenedor2__p">115549283</p>
+              <p class="subcontenedor2__p">Dr. Arturo Melo 2972</p>
+              <p class="subcontenedor2__p">Lanús, Buenos Aires.</p>
+          </div>
+
+          <div class="divisor"></div>
+          
+          <div class="subcontenedor2">
+            <h2 class="h22">Horarios y tienda</h2>
+            <p class="subcontenedor2__p">Lunes a sabados</p>
+            <p class="subcontenedor2__p">10:00hs a 19:00hs</p>
+            <p class="subcontenedor2__p">Tienda online todos los dias las 24hs.</p>
+          </div>  
+        </div>
+      </div>
+
+
 
     <!-- FOOTER -->
     <footer class="row" id="contacto">
         <div class="col-lg-6 col-md-12 p-5">
-            <h3 class="text-white text-center fw-bold">Contáctenos</h3>
+            <h3 class="h3-footer text-center">Contáctenos</h3>
 
             <form id="form-contacto">
                 <div class="form-group mt-3">

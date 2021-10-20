@@ -24,6 +24,7 @@ const miloi = new Producto("MILOI","BODY",false,"S,M,L,XL,XXL",1850);
 // Array de productos
 const productos = [gimmy, yuliam, basement, glit, justin];
 
+
 productos.push(miloi)
 
     // BUSQUEDA
@@ -67,7 +68,7 @@ console.log(productos);
 
     // SIMULADOR DE COMPRA
 
-
+/*
  let menu;
  do {
      let x, y;
@@ -143,4 +144,4 @@ console.log(productos);
     }
 } while (menu != 0) {
     alert("Compra Cancelada");
-} 
+} */
