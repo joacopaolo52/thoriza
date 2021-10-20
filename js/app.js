@@ -66,7 +66,7 @@ productos.sort((a, b) => {
 })
 console.log(productos);
 
-    // SIMULADOR DE COMPRA
+    // SIMULADOR DE COMPRA 
 
 /*
  let menu;
