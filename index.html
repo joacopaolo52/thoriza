@@ -15,6 +15,10 @@
 </head>
 <body>
 
+
+    <a href="https://wa.me/1164861595" target="_blank">   <img id="whatsapp" src="./assets/whatsapp-icon.png" alt="whatsapp">    </a>
+
+
     <!-- HEADER -->
 
     <header>
@@ -24,24 +28,11 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#banner">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#nosotros">Sobre Nosotros</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#tienda" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#tienda">Prendas superiores</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#tienda">Prendas inferiores</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#tienda">Joyas</a></li>
-                            </ul>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/tienda.html">Tienda</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="¿Que buscas?" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
                 </div>
             </div>
         </nav>
@@ -49,66 +40,11 @@
 
     <!-- BANNER -->
 
-    <div class="banner">
+    <div class="banner" id="banner">
         <div class="banner__bg"></div> 
         <div class="banner__content"><h1>#MILOOKTHORIZA</h1></div>
-        <div class="banner__media-icons">
-            <a href="#">
-              <i class="fab fa fa-whatsapp" aria-hidden="true"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-facebook-f" aria-hidden="true"></i>
-            </a>
-        </div>
     </div>
 
-    <!-- Tienda -->
-    <div class="h3-tienda" id="tienda">
-        <h3>Tienda</h3>
-        <hr>
-    </div>
-    <div class="tienda">
-        <div class="productos wow animate__animated animate__zoomIn">
-            <img src="assets/tienda1.jpg" class="producto img-fluid" alt="Producto">
-            <hr>
-            <h4>CAMPERA GIMMY</h4>
-            <button class="button-tienda">Agregar al carrito</button>
-        </div>
-        <div class="productos wow animate__animated animate__zoomIn">
-            <img src="assets/tienda2.jpg" class="producto img-fluid" alt="Producto">
-            <hr>
-            <h4>CAMPERA YULIAM</h4>
-            <button class="button-tienda">Agregar al carrito</button>
-        </div>
-        <div class="productos wow animate__animated animate__zoomIn">
-            <img src="assets/tienda3.jpg" class="producto img-fluid" alt="Producto">
-            <hr>
-            <h4>BODY BASEMENT</h4>
-            <button class="button-tienda">Agregar al carrito</button>
-        </div>
-        <div class="productos wow animate__animated animate__zoomIn">
-            <img src="assets/tienda4.jpg" class="producto img-fluid" alt="Producto">
-            <hr>
-            <h4>CROP TOP GLIT</h4>
-            <button class="button-tienda">Agregar al carrito</button>
-        </div>
-        <div class="productos wow animate__animated animate__zoomIn">
-            <img src="assets/tienda5.jpg" class="producto img-fluid" alt="Producto">
-            <hr>
-            <h4>CAMISA JUSTIN</h4>
-            <button class="button-tienda">Agregar al carrito</button>
-        </div>
-        <div class="productos wow animate__animated animate__zoomIn">
-            <img src="assets/tienda6.jpg" class="producto img-fluid" alt="Producto">
-            <hr>
-            <h4>BODY MILOI</h4>
-            <button class="button-tienda">Agregar al carrito</button>
-        </div>
-
-    </div>
 
 
     <!-- SOBRE NOSOTROS 2 -->
@@ -143,7 +79,8 @@
 
     <!-- FOOTER -->
     <footer class="row" id="contacto">
-        <div class="col-lg-6 col-md-12 p-5">
+        
+        <!-- <div class="col-lg-6 col-md-12 p-5">
             <h3 class="h3-footer text-center">Contáctenos</h3>
 
             <form id="form-contacto">
@@ -160,17 +97,16 @@
                     <input name="mensaje" type="textarea" cols="30" rows="10" class="form-control mt-2  w-50 m-auto mensaje" placeholder=" Dejenos su mensaje...">
                 </div>
                 <button type="submit" class="button">Enviar</button>
-            </form>
+            </form> -->
 
         </div>
 
         <div class="map col-lg-6 col-md-12">
+            
+            <h3 class="h3-footer text-center">Contáctenos</h3>
+            
             <!-- DATOS DE CONTACTO -->
             <div class="contacto">
-                <a href="https://www.instagram.com/thoriza.ind/" target="_blank">
-                    <i class="fab fa-twitter" alt="Twitter"></i>
-                    <p class="d-inline-block ms-3">/thoriza.ind</p>
-                </a>
                 
                 <a href="https://www.facebook.com/profile.php?id=100055621801258" target="_blank">
                     <i class="fab fa-facebook" alt="Facebook"></i>
@@ -193,6 +129,7 @@
                 </a>
             </div>
         </div>
+
     </footer>
 
     <!-- SCRIPT -->

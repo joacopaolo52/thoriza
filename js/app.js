@@ -1,182 +1,314 @@
     
     // PRODUCTOS
 
-const Producto = function(name, prenda, stock, talle, precio) {
-    this.name = name;
-    this.prenda = prenda;
-    this.stock = stock;
-    this.talle = talle;
-    this.precio = precio;
-}
+    // IMAGEN 1
 
-const gimmy = new Producto("GIMMY","CAMPERA",true,"S,M,L,XL,XXL",5600);
+    const img1 = document.querySelector('#img1');
 
-const yuliam = new Producto("YULIAM","CAMPERA",true,"S,M,L,XL,XXL",4400);
+    img1.addEventListener('mouseover', ()=> {
+        img1.setAttribute('src', '../assets/tienda1-1.jpg')
+    });
 
-const basement = new Producto("BASEMENT","BODY",true,"S,M,L,XL,XXL",1680);
+    img1.addEventListener('mouseout', ()=> {
+        img1.setAttribute('src', '../assets/tienda1.jpg')
+    });
 
-const glit = new Producto("GLIT","CROP TOP",true,"S,M,L,XL,XXL",1495);
+    // IMAGEN 2
 
-const justin = new Producto("JUSTIN","CAMISA",true,"S,M,L,XL,XXL",2990);
+    const img2 = document.querySelector('#img2');
 
-const miloi = new Producto("MILOI","BODY",false,"S,M,L,XL,XXL",1850);
+    img2.addEventListener('mouseover', ()=> {
+        img2.setAttribute('src', '../assets/tienda2-2.jpg')
+    });
 
-    // FIN DE PRODUCTOS
+    img2.addEventListener('mouseout', ()=> {
+        img2.setAttribute('src', '../assets/tienda2.jpg')
+    });
 
-    // Array de productos
-const productos = [gimmy, yuliam, basement, glit, justin];
-productos.push(miloi)
+    // IMAGEN 3
 
-    // BUSQUEDA POR PRENDA
-const busquedaPrenda = productos.find( Producto => Producto.prenda == "Campera" | Producto.prenda == "CAMPERA" | Producto.prenda == "campera" );
-    // BUSQUEDA POR NOMBRE
-const busquedaName = productos.find( Producto => Producto.name == "Miloi"| Producto.name == "MILOI" | Producto.name == "miloi" );
+    const img3 = document.querySelector('#img3');
 
-// ORDERNAR ALFABETICAMENTE PRODUCTOS
-productos.sort((a, b) => {
-    if (a.name.toLowerCase() > b.name.toLowerCase()) {
-        return 1;
-    }
-    if (a.name.toLowerCase() < b.name.toLowerCase()) {
-        return -1;
-    }
-    return 0;
-})
+    img3.addEventListener('mouseover', ()=> {
+        img3.setAttribute('src', '../assets/tienda3-3.jpg')
+    });
 
-// ORDERNAR PRODUCTOS POR MENOR PRECIO
-productos.sort((a, b) => {
-    if (a.precio > b.precio) {
-        return 1;
-    }
-    if (a.precio < b.precio) {
-        return -1;
-    }
-    if (a.name.toLowerCase() > b.name.toLowerCase()) {
-        return 1;
-    }
-    if (a.name.toLowerCase() < b.name.toLowerCase()) {
-        return -1;
-    }
-    return 0;
-})
-console.log(productos);
+    img3.addEventListener('mouseout', ()=> {
+        img3.setAttribute('src', '../assets/tienda3.jpg')
+    });
 
-    // SIMULADOR DE COMPRA 
+    // IMAGEN 4
 
-/*
- let menu;
- do {
-     let x, y;
+    const img4 = document.querySelector('#img4');
+
+    img4.addEventListener('mouseover', ()=> {
+        img4.setAttribute('src', '../assets/tienda4-4.jpg')
+    });
+
+    img4.addEventListener('mouseout', ()=> {
+        img4.setAttribute('src', '../assets/tienda4.jpg')
+    });
+
+    // IMAGEN 5
+
+    const img5 = document.querySelector('#img5');
+
+    img5.addEventListener('mouseover', ()=> {
+        img5.setAttribute('src', '../assets/tienda5-5.jpg')
+    });
+
+    img5.addEventListener('mouseout', ()=> {
+        img5.setAttribute('src', '../assets/tienda5.jpg')
+    });
+
+    // IMAGEN 6
+
+    const img6 = document.querySelector('#img6');
+
+    img6.addEventListener('mouseover', ()=> {
+        img6.setAttribute('src', '../assets/tienda6-6.jpg')
+    });
+
+    img6.addEventListener('mouseout', ()=> {
+        img6.setAttribute('src', '../assets/tienda6.jpg')
+    });
+
+    // IMAGEN 7
+
+    const img7 = document.querySelector('#img7');
+
+    img7.addEventListener('mouseover', ()=> {
+        img7.setAttribute('src', '../assets/tienda7-7.jpg')
+    });
+
+    img7.addEventListener('mouseout', ()=> {
+        img7.setAttribute('src', '../assets/tienda7.jpg')
+    });
+
+    // IMAGEN 8
+
+    const img8 = document.querySelector('#img8');
+
+    img8.addEventListener('mouseover', ()=> {
+        img8.setAttribute('src', '../assets/tienda8-8.jpg')
+    });
+
+    img8.addEventListener('mouseout', ()=> {
+        img8.setAttribute('src', '../assets/tienda8.jpg')
+    });
+
+    // IMAGEN 9
+
+    const img9 = document.querySelector('#img9');
+
+    img9.addEventListener('mouseover', ()=> {
+        img9.setAttribute('src', '../assets/tienda9-9.jpg')
+    });
+
+    img9.addEventListener('mouseout', ()=> {
+        img9.setAttribute('src', '../assets/tienda9.jpg')
+    });
+
+    // IMAGEN 10
+
+    const img10 = document.querySelector('#img10');
+
+    img10.addEventListener('mouseover', ()=> {
+        img10.setAttribute('src', '../assets/tienda10-10.jpg')
+    });
+
+    img10.addEventListener('mouseout', ()=> {
+        img10.setAttribute('src', '../assets/tienda10.jpg')
+    });
+
+    // IMAGEN 11
+
+    const img11 = document.querySelector('#img11');
+
+    img11.addEventListener('mouseover', ()=> {
+        img11.setAttribute('src', '../assets/tienda11-11.jpg')
+    });
+
+    img11.addEventListener('mouseout', ()=> {
+        img11.setAttribute('src', '../assets/tienda11.jpg')
+    });
+
+        // IMAGEN 12
+
+        const img12 = document.querySelector('#img12');
+
+        img12.addEventListener('mouseover', ()=> {
+            img12.setAttribute('src', '../assets/tienda12-12.jpg')
+        });
     
-     menu = Number(prompt(`Ingrese el producto que desea comprar
+        img12.addEventListener('mouseout', ()=> {
+            img12.setAttribute('src', '../assets/tienda12.jpg')
+        });
+
+        // IMAGEN 13
+
+        const img13 = document.querySelector('#img13');
+
+        img13.addEventListener('mouseover', ()=> {
+            img13.setAttribute('src', '../assets/tienda13-13.jpg')
+        });
     
-     1- CAMPERA GIMMY ($5600)
-     2- CAMPERA YULIAM ($4400)
-     3- BODY BASEMENT ($1680)
-     4- CROP TOP GLIT ($1495)
-     5- CAMISA JUSTIN ($2990)
-     6- BODY MILOI ($1850)
+        img13.addEventListener('mouseout', ()=> {
+            img13.setAttribute('src', '../assets/tienda13.jpg')
+        });
 
-     0- Salir
+        // IMAGEN 14
+
+        const img14 = document.querySelector('#img14');
+
+        img14.addEventListener('mouseover', ()=> {
+            img14.setAttribute('src', '../assets/tienda14-14.jpg')
+        });
     
-     `));
-     switch (menu) {
-        case 1:
-            y = String(prompt("Ingrese el talle"))
-            x = Number(prompt("Ingrese la cantidad de unidades"));
-            alert(`
-            Usted compró Campera Gimmy.
+        img14.addEventListener('mouseout', ()=> {
+            img14.setAttribute('src', '../assets/tienda14.jpg')
+        });
 
-            Talle: (${y})
-            Unidades: (${x})
-            Precio final de $${5600 * x}`);
-            break;
-        case 2:
-            y = String(prompt("Ingrese el talle"))
-            x = Number(prompt("Ingrese la cantidad de unidades"));
-            alert(`
-            Usted compró Campera Yuliam.
+        // IMAGEN 15
 
-            Talle: (${y})
-            Unidades: (${x})
-            Precio final de $${4400 * x}`);
-            break;
-        case 3:
-            y = String(prompt("Ingrese el talle"))
-            x = Number(prompt("Ingrese la cantidad de unidades"));
-            alert(`
-            Usted compró Body Basement.
+        const img15 = document.querySelector('#img15');
 
-            Talle: (${y})
-            Unidades: (${x})
-            Precio final de $${1680 * x}`);
-            break;
-        case 4:
-            y = String(prompt("Ingrese el talle"))
-            x = Number(prompt("Ingrese la cantidad de unidades"));
-            alert(`
-            Usted compró Crop Top Glit.
+        img15.addEventListener('mouseover', ()=> {
+            img15.setAttribute('src', '../assets/tienda15-15.jpg')
+        });
+    
+        img15.addEventListener('mouseout', ()=> {
+            img15.setAttribute('src', '../assets/tienda15.jpg')
+        });
 
-            Talle: (${y})
-            Unidades: (${x})
-            Precio final de $${1495 * x}`);
-            break;
-        case 5:
-            y = String(prompt("Ingrese el talle"))
-            x = Number(prompt("Ingrese la cantidad de unidades"));
-            alert(`
-            Usted compró Camisa Justin.
+        // IMAGEN 17
 
-            Talle: (${y})
-            Unidades: (${x})
-            Precio final de $${2990 * x}`);
-            break;
-         case 6:
-             alert("No hay stock del producto seleccionado.");
-        default:
-             alert("Elija un producto de la lista.");
-            break;
-    }
-} while (menu != 0) {
-    alert("Compra Cancelada");
-} */
+        const img17 = document.querySelector('#img17');
 
+        img17.addEventListener('mouseover', ()=> {
+            img17.setAttribute('src', '../assets/tienda17-17.jpg')
+        });
+    
+        img17.addEventListener('mouseout', ()=> {
+            img17.setAttribute('src', '../assets/tienda17.jpg')
+        });
 
-    // DOM // PRECIOS PRODUCTOS
+        // IMAGEN 19
 
-let precio = document.createElement("h5");
-precio.innerText = `Precio : $${gimmy.precio}`;
-let divPadre = document.querySelector(".productos");
-let button = document.querySelector(".button-tienda");
-divPadre.insertBefore(precio, button);
+        const img19 = document.querySelector('#img19');
 
+        img19.addEventListener('mouseover', ()=> {
+            img19.setAttribute('src', '../assets/tienda19-19.jpg')
+        });
+    
+        img19.addEventListener('mouseout', ()=> {
+            img19.setAttribute('src', '../assets/tienda19.jpg')
+        });
 
-precio = document.createElement("h5");
-precio.innerText = `Precio : $${yuliam.precio}`;
-divPadre = document.querySelector(".productos:nth-child(2)");
-button = document.querySelector(".productos:nth-child(2) .button-tienda");
-divPadre.insertBefore(precio, button);
+        // IMAGEN 20
 
-precio = document.createElement("h5");
-precio.innerText = `Precio : $${basement.precio}`;
-divPadre = document.querySelector(".productos:nth-child(3)");
-button = document.querySelector(".productos:nth-child(3) .button-tienda");
-divPadre.insertBefore(precio, button);
+        const img20 = document.querySelector('#img20');
 
-precio = document.createElement("h5");
-precio.innerText = `Precio : $${glit.precio}`;
-divPadre = document.querySelector(".productos:nth-child(4)");
-button = document.querySelector(".productos:nth-child(4) .button-tienda");
-divPadre.insertBefore(precio, button);
+        img20.addEventListener('mouseover', ()=> {
+            img20.setAttribute('src', '../assets/tienda20-20.jpg')
+        });
+    
+        img20.addEventListener('mouseout', ()=> {
+            img20.setAttribute('src', '../assets/tienda20.jpg')
+        });
 
-precio = document.createElement("h5");
-precio.innerText = `Precio : $${justin.precio}`;
-divPadre = document.querySelector(".productos:nth-child(5)");
-button = document.querySelector(".productos:nth-child(5) .button-tienda");
-divPadre.insertBefore(precio, button);
+        // IMAGEN 22
 
-precio = document.createElement("h5");
-precio.innerText = `Precio : $${miloi.precio}`;
-divPadre = document.querySelector(".productos:nth-child(6)");
-button = document.querySelector(".productos:nth-child(6) .button-tienda");
-divPadre.insertBefore(precio, button);
+        const img22 = document.querySelector('#img22');
+
+        img22.addEventListener('mouseover', ()=> {
+            img22.setAttribute('src', '../assets/tienda22-22.jpg')
+        });
+    
+        img22.addEventListener('mouseout', ()=> {
+            img22.setAttribute('src', '../assets/tienda22.jpg')
+        });
+
+        // IMAGEN 23
+
+        const img23 = document.querySelector('#img23');
+
+        img23.addEventListener('mouseover', ()=> {
+            img23.setAttribute('src', '../assets/tienda23-23.jpg')
+        });
+    
+        img23.addEventListener('mouseout', ()=> {
+            img23.setAttribute('src', '../assets/tienda23.jpg')
+        });
+    
+        // IMAGEN 24
+
+        const img24 = document.querySelector('#img24');
+
+        img24.addEventListener('mouseover', ()=> {
+            img24.setAttribute('src', '../assets/tienda24-24.jpg')
+        });
+    
+        img24.addEventListener('mouseout', ()=> {
+            img24.setAttribute('src', '../assets/tienda24.jpg')
+        });
+
+        // IMAGEN 25
+
+        const img25 = document.querySelector('#img25');
+
+        img25.addEventListener('mouseover', ()=> {
+            img25.setAttribute('src', '../assets/tienda25-25.jpg')
+        });
+    
+        img25.addEventListener('mouseout', ()=> {
+            img25.setAttribute('src', '../assets/tienda25.jpg')
+        });
+
+        // IMAGEN 26
+
+        const img26 = document.querySelector('#img26');
+
+        img26.addEventListener('mouseover', ()=> {
+            img26.setAttribute('src', '../assets/tienda26-26.jpg')
+        });
+    
+        img26.addEventListener('mouseout', ()=> {
+            img26.setAttribute('src', '../assets/tienda26.jpg')
+        });
+
+        // IMAGEN 27
+
+        const img27 = document.querySelector('#img27');
+
+        img27.addEventListener('mouseover', ()=> {
+            img27.setAttribute('src', '../assets/tienda27-27.jpg')
+        });
+    
+        img27.addEventListener('mouseout', ()=> {
+            img27.setAttribute('src', '../assets/tienda27.jpg')
+        });
+
+        // IMAGEN 28
+
+        const img28 = document.querySelector('#img28');
+
+        img28.addEventListener('mouseover', ()=> {
+            img28.setAttribute('src', '../assets/tienda28-28.jpg')
+        });
+    
+        img28.addEventListener('mouseout', ()=> {
+            img28.setAttribute('src', '../assets/tienda28.jpg')
+        });
+
+        // IMAGEN 29
+
+        const img29 = document.querySelector('#img29');
+
+        img29.addEventListener('mouseover', ()=> {
+            img29.setAttribute('src', '../assets/tienda29-29.jpg')
+        });
+    
+        img29.addEventListener('mouseout', ()=> {
+            img29.setAttribute('src', '../assets/tienda29.jpg')
+        });
